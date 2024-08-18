@@ -25,4 +25,43 @@ import YoutubeVideoPlayer from 'vue3-youtube-video-player';
 </script>
 ```
 
+##Add the Component to Your Template
+Use the `<YoutubeVideoPlayer>` component in your template:
+
+``` vue
+<template>
+  <div>
+    <YoutubeVideoPlayer
+      videoId="dD7VD9fCRpU"
+      :autoplay="true"
+      :controls="false"
+      :showinfo="true"
+      :width="800"
+      :height="450"
+      colorPlayButton="white"
+      backgroundColorPlayButton="black"
+      @onEnded="handleVideoEnd"
+    />
+  </div>
+</template>
+
+<script setup>
+const handleVideoEnd = () => {
+  console.log('Video has ended.');
+};
+</script>
+```
+|name | type | description |
+|-----------|-----------|-----------|
+| videoId  | string   | The YouTube video ID to play |
+| width  | number | Valeur 6  |
+| Valeur 7  |number | Valeur 9  |
+| Valeur 7  | number  | Valeur 9  |
+| Valeur 7  |number | Valeur 9  |
+| Valeur 7  |number  | Valeur 9  |
+| Valeur 7  | string | Valeur 9  |
+| Valeur 7  | string  | Valeur 9  |
+|showThumbnailOnEnd   | boolean  | Valeur 9  |
+
+
 
