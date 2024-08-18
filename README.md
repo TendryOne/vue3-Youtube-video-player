@@ -56,13 +56,12 @@ const handleVideoEnd = () => {
 |name | type | description |
 |-----------|-----------|-----------|
 | videoId  | string   | The YouTube video ID to play |
-| width  | number | The height of the video player (in pixels). Default value: `500` |
-| Valeur 7  |number | The width of the video player (in pixels). Default value: `500`  |
-| Valeur 7  | number  |minimizes YouTube branding. Default value: `true` |
-| Valeur 7  |number | shows the video controls  |
-| Valeur 7  |number  | shows related videos at the end of playback. Default value: `false` |
-| Valeur 7  |number  | shows related videos at the end of playback. Default value: `false` |
-| Valeur 7  | number | shows video information before playback. Default value: `true` |
+|height  | number | The height of the video player (in pixels). Default value: `500` |
+| width |number | The width of the video player (in pixels). Default value: `500`  |
+| modestBranding  | number `( 1 | 0 )`  |minimizes YouTube branding. Default value: `0` |
+| controls  |number | shows the video controls . Default value : `1` |
+| rel |number  | shows related videos at the end of playback. Default value: `0` |
+| showinfo | number | shows video information before playback. Default value: `0` |
 | colorPlayButton  | string  | The color of the play button (in CSS format, e.g., white, #000000). Default value: `black`  |
 | backgroundColorPlayButton  | string  | The background color of the play button (in CSS format). Default value: `white` |
 |showThumbnailOnEnd   | boolean  | to control whether the thumbnail is displayed when the video ends  |
@@ -71,7 +70,7 @@ const handleVideoEnd = () => {
 
 `onEnded` : Emitted when the video has finished playing. Use this event to trigger additional actions
 
-## Customisation example
+## Customization example
 
 ``` vue
 
