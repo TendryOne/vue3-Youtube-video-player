@@ -8,11 +8,11 @@ To install the package, use npm or yarn:
 
 ```bash
 npm install vue3-youtube-video-player
-
+```
 or
 
 ```bash
 yarn add vue3-youtube-video-player
-
+```
 
 
