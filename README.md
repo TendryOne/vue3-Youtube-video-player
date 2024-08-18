@@ -51,17 +51,41 @@ const handleVideoEnd = () => {
 };
 </script>
 ```
+## Available Props
+
 |name | type | description |
 |-----------|-----------|-----------|
 | videoId  | string   | The YouTube video ID to play |
-| width  | number | Valeur 6  |
-| Valeur 7  |number | Valeur 9  |
-| Valeur 7  | number  | Valeur 9  |
-| Valeur 7  |number | Valeur 9  |
-| Valeur 7  |number  | Valeur 9  |
-| Valeur 7  | string | Valeur 9  |
-| Valeur 7  | string  | Valeur 9  |
-|showThumbnailOnEnd   | boolean  | Valeur 9  |
+| width  | number | The height of the video player (in pixels). Default value: `500` |
+| Valeur 7  |number | The width of the video player (in pixels). Default value: `500`  |
+| Valeur 7  | number  |minimizes YouTube branding. Default value: `true` |
+| Valeur 7  |number | shows the video controls  |
+| Valeur 7  |number  | shows related videos at the end of playback. Default value: `false` |
+| Valeur 7  |number  | shows related videos at the end of playback. Default value: `false` |
+| Valeur 7  | number | shows video information before playback. Default value: `true` |
+| colorPlayButton  | string  | The color of the play button (in CSS format, e.g., white, #000000). Default value: `black`  |
+| backgroundColorPlayButton  | string  | The background color of the play button (in CSS format). Default value: `white` |
+|showThumbnailOnEnd   | boolean  | to control whether the thumbnail is displayed when the video ends  |
 
+## Events
 
+`onEnded` : Emitted when the video has finished playing. Use this event to trigger additional actions
 
+## Customisation example
+
+``` vue
+
+<template>
+  <div>
+    <YoutubeVideoPlayer
+      videoId="nwpARFlhjXQ"
+      :autoplay="true"
+      :controls="false"
+      :showinfo="true"
+      :colorPlayButton="'red'"
+      :backgroundColorPlayButton="'yellow'"
+    />
+  </div>
+</template>
+
+```
