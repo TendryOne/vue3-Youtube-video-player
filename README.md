@@ -1,11 +1,18 @@
-# vue3-Youtube-video-player
+# vue3-youtube-video-player
 
-Un composant Vue 3 pour intégrer facilement des vidéos YouTube dans vos applications Vue. Ce composant offre des options personnalisables pour la lecture des vidéos, y compris les contrôles, l'autoplay, et la personnalisation du bouton de lecture.
+A Vue 3 component for easily integrating YouTube videos into your Vue applications. This component offers customizable options for video playback, including controls, autoplay, and custom play button styling.
 
 ## Installation
 
-Pour installer le package, utilisez npm ou yarn :
+To install the package, use npm or yarn:
 
 ```bash
 npm install vue3-youtube-video-player
+
+or
+
+```bash
+yarn add vue3-youtube-video-player
+
+
 
