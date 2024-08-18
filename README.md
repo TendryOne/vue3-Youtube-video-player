@@ -15,4 +15,14 @@ or
 yarn add vue3-youtube-video-player
 ```
 
+## Usage
+
+Import the Component
+In your Vue file, import and register the component:
+```vue
+<script setup>
+import YoutubeVideoPlayer from 'vue3-youtube-video-player';
+</script>
+```
+
 
